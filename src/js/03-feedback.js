@@ -22,6 +22,11 @@ function onFormSubmit(e) {
   e.preventDefault();
 
   formEl.reset();
+  
+  // const savedMessage = localStorage.getItem(keyLocaleStorage);
+  // const arrayLocalStorage = JSON.parse(savedMessage);
+  // console.log(arrayLocalStorage)
+
   console.log(formData);
   localStorage.removeItem(keyLocaleStorage);
 }
