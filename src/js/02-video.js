@@ -13,6 +13,6 @@ function timeCount(event) {
     localStorage.setItem(keyLocalStorage, `${event.seconds}`)
 }
 
-const savedTimeVideoLocalStorage = localStorage.getItem(keyLocalStorage || 0);
+const savedTimeVideoLocalStorage = localStorage.getItem(keyLocalStorage) || 0;
 
 myVideoPlayer.setCurrentTime(savedTimeVideoLocalStorage);
