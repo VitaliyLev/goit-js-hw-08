@@ -31,7 +31,7 @@ function textInAllFormInput() {
 
   if (savedMessage) {
     const arrayLocalStorage = JSON.parse(savedMessage);
-    formEl.email.value = arrayLocalStorage.email;
-    formEl.message.value = arrayLocalStorage.message;
+    formEl.email.value = arrayLocalStorage.email || '';
+    formEl.message.value = arrayLocalStorage.message || '';
   }
 }
