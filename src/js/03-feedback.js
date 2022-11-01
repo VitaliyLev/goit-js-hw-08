@@ -30,7 +30,8 @@ function textInAllFormInput() {
   const savedMessage = localStorage.getItem(keyLocaleStorage);
 
   if (savedMessage) {
-    formEl.email.value = keyLocaleStorage;
-    formEl.message.value = keyLocaleStorage;
+    const arrayLocalStorage = JSON.parse(savedMessage);
+    formEl.email.value = arrayLocalStorage.email;
+    formEl.message.value = arrayLocalStorage.message;
   }
 }
